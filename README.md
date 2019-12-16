@@ -29,8 +29,10 @@ Note: Everything is installed locally. Kibana configuration will allow over the 
 YAML type files are extremely dependent on spacing and tab. Not recommended to shift data around.
 Most of the setup is followed using the link below. The link will provide basic understanding of ELK stack.
 URL: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04#step-1-%E2%80%94-installing-and-configuring-elasticsearch
+
 Problems that have to be dealt with include installing java jdk.
 Solution: Install Latest Java Jdk.
+
 Once you have installed, elasticsearch, logstash, kibana, and filebeat, check each configuration.
 For elasticsearch, make sure that the follow is exactly implemented, while keeping everything else the same:
 "network.host: localhost"
