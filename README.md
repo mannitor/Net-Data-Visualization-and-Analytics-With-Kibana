@@ -30,6 +30,16 @@ YAML type files are extremely dependent on spacing and tab. Not recommended to s
 Most of the setup is followed using the link below. The link will provide basic understanding of ELK stack.
 URL: https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04#step-1-%E2%80%94-installing-and-configuring-elasticsearch
 
+Formatting Opendata Rapid7:
+Note: the format to upload Rapid7's data is extremely specific. If you do not follow it, then the logstash config will fail to GROK properly.
+
+These are the following files that are different. Note that some of these have HTTP or HTTPS attached. The following are attached as part of the name:
+1. cert
+2. fdns: These are also json files but keep fdns as priority
+3. json: These are http/https files in json format.
+4. Names: Also http/https files
+5. Rdns: Also in json format but keep rdns as priority.
+6. Csv :Can range from http/https to imaps, smtp, pop3, telnet, tcp and more. As long as csv are attached.
 
 
  
